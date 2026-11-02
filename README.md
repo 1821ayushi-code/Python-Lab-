@@ -2,11 +2,9 @@ Python Programming Lab Portfolio
 
 Welcome to my Python Programming Lab repository!
 
-I am a first-year B.Tech student pursuing Computer Science and Engineering at JK Lakshmipat University (JKLU), Jaipur.
-
 This repository contains Python programs and practical exercises completed as part of my college programming lab coursework.
 
-📚 Topics Covered
+Topics Covered
 Basic Python Programming
 Variables and Data Types
 Conditional Statements
@@ -18,7 +16,7 @@ Basic Problem Solving
 
 Note: This list will be updated as I learn new concepts.
 
-🎯 Purpose
+Purpose
 Strengthen my Python programming fundamentals.
 Improve logical thinking and problem-solving skills.
 Practise coding through hands-on exercises.
