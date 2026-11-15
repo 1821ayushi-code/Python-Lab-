@@ -1,0 +1,164 @@
+#ques1
+'''
+x=map(int,input().split())
+even=[]
+odd=[]
+for i in x:
+    if i%2==0:
+        even.append(i)
+    else:
+        odd.append(i)
+print('Even:',even)
+print('Odd:',odd)
+'''
+#ques2
+'''
+x=(input().split())
+a=[]
+for i in x:
+    if len(i)>3:
+        a.append(i)
+print(a)
+'''
+#ques3
+'''
+x=input().split()
+w=0
+t=0
+b=0
+r=[]
+ballcount=0
+O=0
+for i in x:
+    ballcount+=1
+    if i=='W' or i=='w':
+        w+=1
+    elif i=='4' or i=='6':
+        b+=int(i)
+        t+=int(i)
+        O+=int(i)
+    else:
+        t+=int(i)
+        O+=int(i)
+    if ballcount%6==0:
+        r.append(O)
+        O=0
+if O>0:
+    r.append(O)
+print('Total Runs:',t)
+print('Wickets:',w)
+print('Boundaries:',b)
+print('Runs per over:',r)
+'''
+
+#ques4
+'''
+x=map(int,input().split())
+smallest=999999999999999999999999999999999999
+largest=0
+for i in x:
+    if i>largest:
+        largest=i
+    if i<smallest:
+        smallest=i
+print('Largest:',largest)
+print('Smallest:',smallest)
+'''
+
+#ques5
+'''
+x=list(input().split())
+longest=x[0]
+for i in x:
+    if len(i)>len(longest):
+        longest=i
+print(longest)
+'''
+
+#ques6(imp)
+'''
+items=list(input().split())
+price=list(map(int,input().split()))
+m=input().split()
+amt=0
+order=[]
+for i in m:
+    if i not in order:
+        order.append(i)
+for i in item:
+    if i in order:
+        count=0
+        for j in m:
+            if i==j:
+                count+=1
+        p=price[item.index(i)]*count
+        print(i, "x", count, "=", p)
+        amt+=p
+print("Total:",amt)
+'''
+
+#ques7
+'''
+x=input().split()
+r=''
+for i in x:
+    rev=''
+    for j in i:
+        rev=j+rev
+    r+=rev+' '
+print(r)
+'''
+
+#ques8
+'''
+x=input().split()
+digit='1234567890'
+l=[]
+for i in x:
+    for j in i:
+        if j in digit:
+            l.append(int(j))
+s=0
+for k in l:
+    s+=k
+print(l)
+print('Sum:',s)
+'''
+
+#ques9
+'''
+N=int(input())
+l=[]
+
+for i in range(N):
+    name=input().lower().split()
+    name1=name[0]+'.'+name[1]
+    c=0
+    for j in l:
+        if name1 in j:
+            c+=1
+
+    if c==0:
+        l.append(f"{name1}@jklu.edu.in")
+    else:
+        l.append(f"{name1}{c+1}@jklu.edu.in")
+
+for i in l:
+    print(i)
+'''
+
+
+#ques10
+'''
+x=map(int,input().split())
+count=0
+l=[]
+for i in x:
+    if i==0:
+        count+=1
+    else:
+        l.append(i)
+for i in range(count):
+    l.append(0)
+print(l)
+'''
